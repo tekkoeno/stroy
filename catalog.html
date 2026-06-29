@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap">
+                <button class="burger-btn" id="burgerBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a class="nav-list-link" href="#about">О нас</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link" href="#catalog">Каталог</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link" href="#reviews">Отзывы</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link" href="#photo">Фото</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__adress">
+                    Московская область, г. Красногорск, ул. Дачная 11а
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <img src="./assets/img/arrow-top.svg" alt="arrow">
+    </button>
+
+    <section class="product-detail">
+        <div class="container">
+            <a href="/#catalog" class="back-link">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="7 13 1 7 7 1"></polyline>
+                </svg>
+                Каталог
+            </a>
+
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="product-main-img">
+                        <button class="gallery-arrow gallery-arrow--prev" id="galleryPrev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <img src="" alt="Главное фото" id="mainProductImg">
+
+                        <button class="gallery-arrow gallery-arrow--next" id="galleryNext">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+
+
+                    </div>
+                    <div class="gallery-dots" id="galleryDots"></div>
+                    <div class="product-thumbnails" id="productThumbnails"></div>
+                </div>
+
+                <div class="product-info">
+                    <h1 class="product-title" id="productTitle">Порошковая покраска</h1>
+
+                    <div class="product-desc" id="productDesc">
+                        <p>Метод получения полимерных покрытий с высокими защитными и декоративными свойствами.</p>
+                        <p>Способ порошкового окрашивания является популярной альтернативой нанесению жидких
+                            лакокрасочных материалов для деталей, допускающих термообработку.</p>
+                    </div>
+
+                    <div class="product-status">Сегодня: Закрыто</div>
+                    <div class="product-actions">
+                        <button class="btn btn--phone">
+                            <img src="./assets/img/phone-icon.svg" alt="" class="btn-icon">
+                            +8 (905) Показать
+                        </button>
+
+                        <div class="btn-dropdown-wrapper">
+                            <button class="btn btn--white" id="dropdownWriteBtn">Написать</button>
+
+                            <div class="messenger-dropdown" id="messengerDropdown">
+                                <a href="https://wa.me/79050000000" target="_blank" class="dropdown-item">
+                                    <img src="./assets/img/whatsapp-icon.svg" alt="WhatsApp">
+                                    <span>WhatsApp</span>
+                                </a>
+                                <a href="https://t.me/your_username" target="_blank" class="dropdown-item">
+                                    <img src="./assets/img/telegram-icon.svg" alt="Telegram">
+                                    <span>Telegram</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a target="_blank" href="https://yandex.com/maps/-/CTUU6SMj" class="btn btn--white">Как доехать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <p class="contacts-adress">Московская область, г. Красногорск, ул. Дачная 11а</p>
+            <div class="contacts-btns">
+                <button class="btn btn--phone btn--white btn--contacts">
+                    <img src="./assets/img/phone-black-icon.svg" alt="" class="btn-icon">
+                    +8 (905) Показать
+                </button>
+                <a target="_blank" href="https://yandex.com/maps/-/CTUU6SMj" class="btn btn--white btn--contacts">
+                    <img src="./assets/img/path-icon.svg" alt="" class="btn-icon">
+                    Как доехать
+                </a>
+                <a href="#" class="btn btn--white btn--contacts">
+                    <img src="./assets/img/telegram-icon.svg" alt="" class="btn-icon">
+                    Telegram
+                </a>
+                <a href="#" class="btn btn--white btn--contacts">
+                    <img src="./assets/img/whatsapp-icon.svg" alt="" class="btn-icon">
+                    WhatsApp
+                </a>
+            </div>
+
+            <div id="map" class="map-block">
+                    <iframe class="map-item" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac40af20779a165edf513663516cb6d205bf9093dfe0071d8e516b3e375f25d96&amp;source=constructor"  height="400" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="phone-popup" id="phonePopup">
+        <div class="phone-popup-content">
+
+            <div class="phone-popup-header">
+                <span class="phone-popup-title">Телефон организации</span>
+                <button class="phone-popup-close" id="phonePopupClose">&times;</button>
+            </div>
+            <div class="phone-popup-body">
+                <a href="tel:+79151302020" class="phone-popup-link">8 (905) 755-34-53</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

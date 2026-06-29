@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap">
+                <button class="burger-btn" id="burgerBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" id="navMenu">
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a class="nav-list-link" href="#about">О нас</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link" href="#catalog">Каталог</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link" href="#reviews">Отзывы</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link" href="#photo">Фото</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__adress">
+                    Московская область, г. Красногорск, ул. Дачная 11а
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <img src="./assets/img/arrow-top.svg" alt="">
+    </button>
+
+    <main class="main">
+        <div class="container">
+            <div class="main-wrap">
+                <h1 class="main-title">Изготовление металлоконструкций</h1>
+                <p class="main-subtitle">Компания Мастер Сталь</p>
+
+                <div class="main-btns">
+
+                    <button class="btn btn--phone">
+                        <img src="./assets/img/phone-icon.svg" alt="" class="btn-icon">
+                        8 (905) Показать
+                    </button>
+
+                    <a target="_blank" href="https://yandex.com/maps/-/CTUUyQze" class="btn btn--white">
+                        <img src="./assets/img/path-icon.svg" alt="" class="btn-icon">
+                        Как доехать
+                    </a>
+                    <a href="#" class="btn btn--white">
+                        <img src="./assets/img/telegram-icon.svg" alt="" class="btn-icon">
+                        Telegram
+                    </a>
+                    <a href="#" class="btn btn--white">
+                        <img src="./assets/img/whatsapp-icon.svg" alt="" class="btn-icon">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrap">
+                <h2 class="section-title">О нас</h2>
+                <p class="about-text"><strong>Компания «Мастер Сталь»</strong> — ваш надёжный партнёр в сфере металлообработки и производства металлоконструкций. Уже 12 лет мы предоставляем высококачественные услуги: лазерную резку, гибку, сварку и порошковую покраску. Наша команда профессионалов работает на современном оборудовании с применением передовых технологий, что гарантирует идеальную точность и безупречное качество любого заказа.
+                </p>
+                <p class="about-text">Мы понимаем: важна каждая деталь. Именно поэтому уделяем особое внимание каждому этапу производства — от резки профиля до финальной отделки. Все процессы строго контролируются, чтобы полностью удовлетворить потребности клиентов. Наша цель — не просто соответствовать стандартам качества, а превосходить их.</p>
+                <p class="about-text">В нашем портфолио — множество проектов: от уникальных индивидуальных решений до серийного производства. Наши услуги востребованы в разных отраслях, и мы готовы предложить гибкие условия сотрудничества. Доверив нам свои задачи, вы выбираете надёжность, профессионализм и высокий уровень сервиса.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+        <div class="container">
+
+            <h2 class="section-title">Каталог</h2>
+
+
+            <ul class="catalog-tabs">
+                <li class="catalog-tabs-item active" data-filter="all">Все</li>
+                <li class="catalog-tabs-item" data-filter="powder">Порошковая покраска</li>
+                <li class="catalog-tabs-item" data-filter="bending">Гибка</li>
+                <li class="catalog-tabs-item" data-filter="laser">Лазерная резка</li>
+                <li class="catalog-tabs-item" data-filter="rolling">Вальцовка</li>
+                <li class="catalog-tabs-item" data-filter="painting">Покраска</li>
+                <li class="catalog-tabs-item" data-filter="welding">Сварка</li>
+            </ul>
+
+
+            <div class="catalog-grid">
+
+                <a href="catalog.html?category=laser" class="catalog-card" data-category="laser">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/lazer1.PNG" alt="Лазерная резка">
+                    </div>
+                    <div class="catalog-card-title active-title">Лазерная резка</div>
+                </a>
+
+
+                <a href="catalog.html?category=bending" class="catalog-card" data-category="bending">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/gibka1.PNG" alt="Гибка">
+                    </div>
+                    <div class="catalog-card-title">Гибка</div>
+                </a>
+                
+                <a href="catalog.html?category=laser" class="catalog-card" data-category="laser">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/lazer2.PNG" alt="Лазерная резка">
+                    </div>
+                    <div class="catalog-card-title active-title">Лазерная резка</div>
+                </a>
+                <a href="catalog.html?category=powder" class="catalog-card" data-category="powder">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/pokraska-porosh2.PNG" alt="Порошковая покраска">
+                    </div>
+                    <div class="catalog-card-title">Порошковая покраска</div>
+                </a>
+                <a href="catalog.html?category=rolling" class="catalog-card" data-category="rolling">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/valcovka1.PNG" alt="Вальцовка">
+                    </div>
+                    <div class="catalog-card-title">Вальцовка</div>
+                </a>
+                <a href="catalog.html?category=bending" class="catalog-card" data-category="bending">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/gibka2.PNG" alt="Гибка">
+                    </div>
+                    <div class="catalog-card-title">Гибка</div>
+                </a>
+                 <a href="catalog.html?category=laser" class="catalog-card" data-category="laser">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/lazer3.PNG" alt="Лазерная резка">
+                    </div>
+                    <div class="catalog-card-title active-title">Лазерная резка</div>
+                </a>
+                <a href="catalog.html?category=welding" class="catalog-card" data-category="welding">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/svarka1.PNG" alt="Сварка">
+                    </div>
+                    <div class="catalog-card-title">Сварка</div>
+                </a>
+
+
+                <a href="catalog.html?category=powder" class="catalog-card" data-category="powder">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/pokraska-porosh1.PNG" alt="Порошковая покраска">
+                    </div>
+                    <div class="catalog-card-title">Порошковая покраска</div>
+                </a>
+
+                <a href="catalog.html?category=painting" class="catalog-card" data-category="painting">
+                    <div class="catalog-card-img">
+                        <img src="./assets/img/catalog/pokraska.png" alt="Покраска">
+                    </div>
+                    <div class="catalog-card-title">Покраска</div>
+                </a>
+            </div>
+            <div class="pagination">
+                <button class="pagination-arrow prev disabled">
+                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://w3.org">
+                        <path d="M10 18L2 10L10 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pagination-pages">
+                </div>
+                <button class="pagination-arrow next">
+                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://w3.org">
+                        <path d="M2 2L10 10L2 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <section class="photo" id="photo">
+        <div class="container">
+            <h2 class="section-title">Фото</h2>
+
+
+            <div class="photo-grid" id="photoGallery">
+                <div class="photo-item">
+                    <img src="./assets/img/catalog/gibka1.PNG" alt="Металлоконструкции">
+                </div>
+                <div class="photo-item">
+                    <img src="./assets/img/catalog/gibka2.PNG" alt="Металлоконструкции">
+                </div>
+                <div class="photo-item">
+                    <img src="./assets/img/catalog/lazer1.PNG" alt="Металлоконструкции">
+                </div>
+                <div class="photo-item">
+                    <img src="./assets/img/catalog/lazer2.PNG" alt="Металлоконструкции">
+                </div>
+                <div class="photo-item">
+                    <img src="./assets/img/catalog/lazer3.PNG" alt="Металлоконструкции">
+                </div>
+                <div class="photo-item">
+                    <img src="./assets/img/catalog/pokraska-porosh1.PNG" alt="Металлоконструкции">
+                </div>
+                <div class="photo-item">
+                    <img src="./assets/img/catalog/pokraska-porosh2.PNG" alt="Металлоконструкции">
+                </div>
+            </div>
+
+            <div class="photo-more-wrap">
+                <button class="btn-more" id="loadMorePhotos">Показать еще</button>
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы</h2>
+
+
+            <div class="reviews-grid" id="reviewsGrid">
+
+
+                <div class="review-card" data-rating="5">
+                    <div class="review-header">
+                        <img src="./assets/photo/user-photo.png" alt="Всеволод Липатов" class="review-avatar">
+                        <div class="review-meta">
+                            <h4 class="review-author">Всеволод Липатов</h4>
+                            <div class="review-stars-wrap">
+                                <div class="review-stars"></div>
+                                <span class="review-date">19 февраля</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Все отлично</p>
+                </div>
+
+
+                <div class="review-card" data-rating="5">
+                    <div class="review-header">
+                        <img src="./assets/photo/user-photo.png" alt="Всеволод Липатов" class="review-avatar">
+                        <div class="review-meta">
+                            <h4 class="review-author">Всеволод Липатов</h4>
+                            <div class="review-stars-wrap">
+                                <div class="review-stars"></div>
+                                <span class="review-date">19 февраля</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Все отлично</p>
+                </div>
+
+                <div class="review-card" data-rating="5">
+                    <div class="review-header">
+                        <img src="./assets/photo/user-photo.png" alt="Всеволод Липатов" class="review-avatar">
+                        <div class="review-meta">
+                            <h4 class="review-author">Всеволод Липатов</h4>
+                            <div class="review-stars-wrap">
+                                <div class="review-stars"></div>
+                                <span class="review-date">19 февраля</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Все отлично</p>
+                </div>
+
+
+                <div class="review-card" data-rating="5">
+                    <div class="review-header">
+                        <img src="./assets/photo/user-photo.png" alt="Всеволод Липатов" class="review-avatar">
+                        <div class="review-meta">
+                            <h4 class="review-author">Всеволод Липатов</h4>
+                            <div class="review-stars-wrap">
+                                <div class="review-stars"></div>
+                                <span class="review-date">19 февраля</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Все отлично</p>
+                </div>
+
+            </div>
+
+            <div class="reviews-more-wrap">
+                <button class="btn-reviews-more" id="loadMoreReviews">Ещё отзывы</button>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <p class="contacts-adress">Московская область, г. Красногорск, ул. Дачная 11а</p>
+            <div class="contacts-btns">
+                <button class="btn btn--phone btn--white btn--contacts">
+                    <img src="./assets/img/phone-black-icon.svg" alt="" class="btn-icon">
+                    8 (905) Показать
+                </button>
+                <a target="_blank" href="https://yandex.com/maps/-/CTUUyQze" class="btn btn--white btn--contacts">
+                    <img src="./assets/img/path-icon.svg" alt="" class="btn-icon">
+                    Как доехать
+                </a>
+                <a href="#" class="btn btn--white btn--contacts">
+                    <img src="./assets/img/telegram-icon.svg" alt="" class="btn-icon">
+                    Telegram
+                </a>
+                <a href="#" class="btn btn--white btn--contacts">
+                    <img src="./assets/img/whatsapp-icon.svg" alt="" class="btn-icon">
+                    WhatsApp
+                </a>
+            </div>
+
+            <div id="map" class="map-block">
+                    <iframe class="map-item" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac40af20779a165edf513663516cb6d205bf9093dfe0071d8e516b3e375f25d96&amp;source=constructor"  height="400" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="photo-modal" id="photoModal">
+
+        <button class="modal-close" id="modalClose">&times;</button>
+
+        <div class="modal-image-area">
+
+            <button class="modal-arrow modal-arrow--prev" id="modalPrev">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <img src="" alt="Просмотр фото" id="modalTargetImg">
+
+
+            <button class="modal-arrow modal-arrow--next" id="modalNext">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+
+        <aside class="modal-sidebar">
+            <div class="modal-sidebar-header">
+                <div class="modal-logo">
+
+                </div>
+                <h3 class="modal-company-title">Компания Мастер Сталь</h3>
+                <p class="modal-company-subtitle">Металлоконструкции</p>
+            </div>
+
+            <div class="modal-sidebar-btns">
+                <button class="btn btn--phone">
+                    <img src="./assets/img/phone-icon.svg" alt="" class="btn-icon">
+                    8 (905) Показать
+                </button>
+                <a target="_blank" href="https://yandex.com/maps/-/CTUUyQze" class="btn btn--white">
+                    <img src="./assets/img/path-icon.svg" alt="" class="btn-icon">
+                    Как доехать
+                </a>
+                <a href="#" class="btn btn--white">
+                    <img src="./assets/img/telegram-icon.svg" alt="" class="btn-icon">
+                    Telegram
+                </a>
+                <a href="#" class="btn btn--white">
+                    <img src="./assets/img/whatsapp-icon.svg" alt="" class="btn-icon">
+                    WhatsApp
+                </a>
+            </div>
+        </aside>
+    </div>
+    <div class="phone-popup" id="phonePopup">
+        <div class="phone-popup-content">
+
+            <div class="phone-popup-header">
+                <span class="phone-popup-title">Телефон организации</span>
+                <button class="phone-popup-close" id="phonePopupClose">&times;</button>
+            </div>
+            <div class="phone-popup-body">
+                <a href="tel:+79057553453" class="phone-popup-link">8 (905) 755-34-53</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
