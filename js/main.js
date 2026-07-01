@@ -119,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let poolOfPhotos = [
         '../assets/img/catalog/svarka1.PNG',
-        '../assets/img/catalog/pokraska.png',
         '../assets/img/catalog/valcovka1.PNG',
     ];
     const PHOTOS_PER_CLICK = 6;
